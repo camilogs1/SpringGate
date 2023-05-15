@@ -38,11 +38,70 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-
+            <!--Google-->
             <li class="nav-item">
-                <a class="nav-link">
-                    <i class="fas fa-fw fa-chart-area"></i></a>
+                <a class="nav-link" href="#" onclick="openVirtualPage()">
+                    <i class="fas fa-desktop"></i>
+                    <span>Aula virtual</span>
+                </a>
             </li>
+            
+            <script>
+                function openVirtualPage() {
+                    var iframe = document.createElement('iframe');
+                    iframe.src = 'https://virtual.ucatolicaluisamigo.edu.co/campus/?';
+                    iframe.style.position = 'fixed';
+                    iframe.style.top = '200px'; 
+                    iframe.style.left = '300px'; 
+                    iframe.style.width = '600px'; 
+                    iframe.style.height = '400px'; 
+                    document.body.appendChild(iframe);
+                }
+            </script>
+            <!--Fin Google-->
+            <!--Wiki-->
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="openWikipediaPage()">
+                    <i class="fab fa-wikipedia-w"></i>
+                    <span>Wikipedia</span>
+                </a>
+            </li>
+            
+            <script>
+                function openWikipediaPage() {
+                    var iframe = document.createElement('iframe');
+                    iframe.src = 'https://en.wikipedia.org';
+                    iframe.style.position = 'fixed';
+                    iframe.style.top = '200px'; 
+                    iframe.style.left = '300px'; 
+                    iframe.style.width = '600px'; 
+                    iframe.style.height = '400px'; 
+                    document.body.appendChild(iframe);
+                }
+            </script>
+            <!--Fin Wiki-->
+            <!--U-->
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="openUPage()">
+                    <i class="fas fa-university"></i>
+                    <span>Funlam</span>
+                </a>
+            </li>
+            
+            <script>
+                function openUPage() {
+                    var iframe = document.createElement('iframe');
+                    iframe.src = 'https://www.funlam.edu.co';
+                    iframe.style.position = 'fixed';
+                    iframe.style.top = '200px'; 
+                    iframe.style.left = '300px'; 
+                    iframe.style.width = '600px'; 
+                    iframe.style.height = '400px'; 
+                    document.body.appendChild(iframe);
+                }
+            </script>
+            <!--Fin U-->
+            
         </ul>
         <!-- End of Sidebar -->
 
@@ -52,13 +111,6 @@
             <div id="content">
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                        <i class="fas fa-wrench"></i>
-                    </button>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
