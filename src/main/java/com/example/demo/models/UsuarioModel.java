@@ -13,6 +13,7 @@ public class UsuarioModel {
 
     private String nombre;
     private String email;
+    private String contrasena;
     private Integer prioridad;
 
     public void setPrioridad(Integer prioridad){
@@ -45,6 +46,14 @@ public class UsuarioModel {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
     
 }
