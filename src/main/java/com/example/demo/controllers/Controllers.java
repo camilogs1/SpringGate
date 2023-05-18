@@ -20,4 +20,9 @@ public class Controllers {
     public String mostrarPaginaCliente() {
         return "cliente.html";
     }
+
+    @GetMapping("/productos")
+    public String mostrarPaginaProductos() {
+        return "productos.html";
+    }
 }
