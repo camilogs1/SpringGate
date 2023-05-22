@@ -104,9 +104,9 @@
                                         <!-- Aquí se generarán las filas con los datos de la tabla "productos" -->
                                         <th:block th:each="producto : ${productos}">
                                             <tr>
-                                                <td th:text="${producto.id}"></td>
-                                                <td th:text="${producto.nombre}"></td>
-                                                <td th:text="${producto.descripcion}"></td>
+                                                <td th:text="${productos.id}"></td>
+                                                <td th:text="${productos.nombre}"></td>
+                                                <td th:text="${productos.descripcion}"></td>
                                             </tr>
                                         </th:block>
                                     </tbody>
@@ -156,7 +156,7 @@
                 <div class="modal-body">Selecciona "Cerrar sesión" si estás listo para finalizar tu sesión actual.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="login.html">Cerrar sesión</a>
+                    <a class="btn btn-primary" href="/">Cerrar sesión</a>
                 </div>
             </div>
         </div>

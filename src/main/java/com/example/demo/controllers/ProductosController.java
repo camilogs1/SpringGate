@@ -11,8 +11,12 @@ import com.example.demo.repositories.ProductosRepository;
 @Controller
 public class ProductosController {
 
+    private final ProductosRepository<ProductosModel> productosRepository; 
+    
     @Autowired
-    private ProductosRepository<ProductosModel> productosRepository; 
+    public ProductosController(ProductosRepository<ProductosModel> productosRepository) {
+        this.productosRepository = productosRepository;
+    }
     
     @GetMapping("/productos")
     public String mostrarProductos(Model model) {
@@ -22,7 +26,7 @@ public class ProductosController {
         // Pasar los productos al modelo para que estén disponibles en la vista
         model.addAttribute("productos", productos);
         
-        // Devolver el nombre de la vista donde se mostrarán los productos (por ejemplo, "productos.html")
+        // Devolver el nombre de la vista donde se mostrarán los productos
         return "productos";
     }
 }

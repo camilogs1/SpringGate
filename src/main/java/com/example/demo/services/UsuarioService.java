@@ -40,6 +40,8 @@ public class UsuarioService {
         }
     }
 
-
+    public UsuarioModel obtenerPorEmail(String email) {
+        return usuarioRepository.findByEmail(email);
+    }
     
 }
