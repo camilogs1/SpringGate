@@ -21,7 +21,7 @@ public class Controllers {
         return "cliente.html";
     }
 
-    @GetMapping("/productos")
+    @GetMapping("/producto")
     public String mostrarPaginaProductos() {
         return "productos.html";
     }
